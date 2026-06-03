@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page estudos</title>
+    <link rel="stylesheet" href="./SRC/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo" src="./SRC/assets/formula-1-logo-png_seeklogo-330361.png" height="150px" width="280px" alt="logo">
+        </div>
+        <nav>
+            <a class="navegacao" href="#home">Home</a>
+            <a class="navegacao" href="#idolos">Pilotos</a>
+            <a class="navegacao" href="#conquistas">Conquistas</a>
+            <a class="navegacao" href="#galeria">Galeria</a>
+        </nav>
+        </header>
+        <main>
+            <section class="comeco">
+                    <h1>FÓRMULA 1<br>Conheça a história da F1 no Brasil</h1>
+            </section>
+            <section id="home" class="textos">
+                <div>
+                    <h2>Home</h2>
+                    <p>A história da Fórmula 1 no Brasil é uma jornada de paixão nacional que moldou a identidade esportiva do
+                    país e transformou as manhãs de domingo em um ritual sagrado para milhões de brasileiros. Desde os primeiros
+                    passos internacionais nas décadas de 1930 e 1940 até a consolidação do Grande Prêmio do Brasil no calendário
+                    oficial da categoria em 1973, o automobilismo estabeleceu raízes profundas no território nacional. Mais do que
+                    um evento esportivo, a categoria máxima do automobilismo tornou-se um espelho social e cultural do país, impulsionada
+                    pelas transmissões televisivas de massa e pela construção de autódromos emblemáticos como Interlagos e Jacarepaguá.</p><hr>
+                </div>
+            </section>
+            <h2 id="idolos">Ídolos Brasileiros</h2>
+            <section class="pilotos">
+                <div class="card">
+                    <img class="fotoPilotos" src="./SRC/assets/foto-card-senna.webp" height="50%" width="400px" alt="Ayrton Senna">
+                        <div class="textoPilotos">
+                            <h3>AYRTON SENNA</h3>
+                            <p>Maior ídolo do Brasil</p>
+                            <a class="saibaMais" href="https://pt.wikipedia.org/wiki/Ayrton_Senna" target="_blank">Saiba Mais</a>
+                        </div>
+                </div>
+                <div class="card">
+                    <img class="fotoPilotos" src="./SRC/assets/foto-card-NelsonPiquet.webp" height="50%" width="400px" alt="Nelson Piquet">
+                    <div>
+                        <h3>NELSON PIQUET</h3>
+                        <p>Tricampeão Mundial</p>
+                        <a class="saibaMais" href="https://pt.wikipedia.org/wiki/Nelson_Piquet" target="_blank">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="fotoPilotos" src="./SRC/assets/foto-card-Felipemassa.webp" height="50%" width="400px" alt="Felipe Massa">
+                    <div>
+                        <h3>FELIPE MASSA</h3>
+                        <p>Destaque da F1</p>
+                        <a class="saibaMais" href="https://pt.wikipedia.org/wiki/Felipe_Massa" target="_blank">Saiba Mais</a>
+                    </div>
+                </div>
+            </section>
+            <section id="conquistas" class="textos">
+                <div>
+                    <h2>Conquistas</h2>
+                    <p>O Brasil é uma das nações mais vitoriosas na história da Fórmula 1, acumulando 8 títulos mundiais de 
+                    pilotos, 101 vitórias e 293 pódios, conquistados por seis pilotos diferentes. O país também detém o 
+                    recorde de vitórias em diversas equipes de ponta. </p><hr>
+                </div>
+            </section>
+            <section id="galeria" class="textos">
+                <div>
+                    <h2>Galeria</h2>
+                    <div class="carrosel">
+                        <button id="setaEsq" onclick="mudarImagem(-1)">&#10094;</button>
+                        <img id="imgAtual" src="./SRC/assets/foto-galeria-felipeMassa.jpg" alt="galeria de fotos">
+                        <button id="setaDir" onclick="mudarImagem(1)">&#10095;</button>
+                    </div>
+                    </div>
+            </section>
+            <section id="contato" class="textos">
+            </section>
+            <div class="seninha">
+                <img id="foto" src="./SRC/assets/seninha.png" height="400px" width="400px" alt="Foto de um prato de comida">
+            </div>
+            <a id="voltar" href="#">Voltar ao início</a>
+        </main>
+        <footer>
+            <div>
+                <h3>&copy; 2026 Meu Site - Todos os direitos reservados</h3>
+                <p>CONTATOS:</p>
+                <p>11-99427-7852</p>
+                <p>gatinha.manhosa.@gmail.com</p>
+                <p>@Menor_revoltado_35</p>
+            </div>
+        </footer>
+        <script src="./SRC/JS/script.js"></script>
+</body>
+</html>
