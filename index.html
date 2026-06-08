@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page estudos</title>
+    <title>Site F1</title>
     <link rel="stylesheet" href="./SRC/CSS/style.css">
 </head>
 
 <body>
     <header>
         <div>
-            <img id="logo" src="./SRC/assets/formula-1-logo-png_seeklogo-330361.png" height="150px" width="280px" alt="logo">
+            <img id="logo" src="./SRC/assets/formula-1-logo-png_seeklogo-330361.png" alt="logo">
         </div>
         <nav>
-            <a class="navegacao" href="#home">Home</a>
-            <a class="navegacao" href="#idolos">Pilotos</a>
-            <a class="navegacao" href="#conquistas">Conquistas</a>
-            <a class="navegacao" href="#galeria">Galeria</a>
+            <ul>
+                <li><a class="navegacao" href="#home">Home</a></li>
+                <li><a class="navegacao" href="#idolos">Pilotos</a></li>
+                <li><a class="navegacao" href="#conquistas">Conquistas</a></li>
+                <li><a class="navegacao" href="#titulo-galeria">Galeria</a></li>
+            </ul>
         </nav>
         </header>
         <main>
@@ -35,10 +37,10 @@
                     pelas transmissões televisivas de massa e pela construção de autódromos emblemáticos como Interlagos e Jacarepaguá.</p><hr>
                 </div>
             </section>
-            <h2 id="idolos">Ídolos Brasileiros</h2>
+            <h2 class="titulos-centralizados" id="idolos">Ídolos Brasileiros</h2>
             <section class="pilotos">
                 <div class="card">
-                    <img class="fotoPilotos" src="./SRC/assets/foto-card-senna.webp" height="50%" width="400px" alt="Ayrton Senna">
+                    <img class="fotoPilotos" src="./SRC/assets/foto-card-senna.webp" alt="Ayrton Senna">
                         <div class="textoPilotos">
                             <h3>AYRTON SENNA</h3>
                             <p>Maior ídolo do Brasil</p>
@@ -46,7 +48,7 @@
                         </div>
                 </div>
                 <div class="card">
-                    <img class="fotoPilotos" src="./SRC/assets/foto-card-NelsonPiquet.webp" height="50%" width="400px" alt="Nelson Piquet">
+                    <img class="fotoPilotos" src="./SRC/assets/foto-card-NelsonPiquet.webp" alt="Nelson Piquet">
                     <div>
                         <h3>NELSON PIQUET</h3>
                         <p>Tricampeão Mundial</p>
@@ -54,7 +56,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="fotoPilotos" src="./SRC/assets/foto-card-Felipemassa.webp" height="50%" width="400px" alt="Felipe Massa">
+                    <img class="fotoPilotos" src="./SRC/assets/foto-card-Felipemassa.webp" alt="Felipe Massa">
                     <div>
                         <h3>FELIPE MASSA</h3>
                         <p>Destaque da F1</p>
@@ -70,20 +72,43 @@
                     recorde de vitórias em diversas equipes de ponta. </p><hr>
                 </div>
             </section>
-            <section id="galeria" class="textos">
-                <div>
-                    <h2>Galeria</h2>
-                    <div class="carrosel">
-                        <button id="setaEsq" onclick="mudarImagem(-1)">&#10094;</button>
-                        <img id="imgAtual" src="./SRC/assets/foto-galeria-felipeMassa.jpg" alt="galeria de fotos">
-                        <button id="setaDir" onclick="mudarImagem(1)">&#10095;</button>
+
+            <h2 class="titulos-centralizados" id="titulo-galeria">Galeria de Momentos</h2>
+            <section id="galeria">
+                <div class="carrossel active">
+                    <div class="imagem">
+                        <img src="./SRC/assets/foto-galeria-felipeMassa.jpg" alt="galeria de fotos">
                     </div>
                     </div>
+
+                <div class="carrossel">
+                    <div class="imagem">
+                        <img src="./SRC/assets/foto-galeria-bortoleto.jpg" alt="galeria de fotos">
+                    </div>
+                    </div>
+
+                <div class="carrossel">
+                    <div class="imagem">
+                        <img src="./SRC/assets/foto-galeria-ayrton.webp" alt="galeria de fotos">
+                    </div>
+                    </div>
+
+                    <div class="arrows">
+                        <button class="arrow-btn" id="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                            </svg>
+                        </button>
+                        <button class="arrow-btn" id="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                            </svg>
+                        </button>
+                    </div>
             </section>
-            <section id="contato" class="textos">
-            </section>
+
             <div class="seninha">
-                <img id="foto" src="./SRC/assets/seninha.png" height="400px" width="400px" alt="Foto de um prato de comida">
+                <img id="foto" src="./SRC/assets/seninha.png" alt="seninha">
             </div>
             <a id="voltar" href="#">Voltar ao início</a>
         </main>

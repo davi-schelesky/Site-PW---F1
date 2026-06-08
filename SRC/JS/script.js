@@ -1,18 +1,36 @@
-const imagens = [
-    "foto-galeria-ayrton.webp",
-    "foto-galeria-bortoleto.jpg",
-    "foto-galeria-felipeMassa.jpg"
-];
-let indiceAtual = 0;
+const botaoVoltar = document.getElementById("prev");
+const botaoPassar = document.getElementById("next");
+const itens = document.querySelectorAll(".carrossel");
+const galeria = document.getElementById("galeria");
 
-function mudarImagem(direcao){
-    indiceAtual += direcao;
+let active = 0;
+const total = itens.length;
 
-    if(indiceAtual < 0){
-        indiceAtual = imagens.length - 1;
+botaoVoltar.addEventListener('click', () => {
+    update(-1);
+});
+
+botaoPassar.addEventListener('click', () => {
+    update(1);
+});
+
+function update(direcao){
+    document.querySelector(".carrossel.active").classList.remove("active");
+    
+    if(direcao > 0){
+        active = active + 1;
+
+        if(active === total){
+            active = 0;
+        }
     }
-    else if(indiceAtual >= imagens.length){
-        indiceAtual = 0;
+    else if(direcao < 0){
+        active = active - 1;
+
+        if(active < 0){
+            active = total - 1;
+        }
     }
-    document.getElementById("imgAtual").src = "./SRC/assets/" + imagens[indiceAtual];
-}
+
+    itens[active].classList.add("active");
+};
