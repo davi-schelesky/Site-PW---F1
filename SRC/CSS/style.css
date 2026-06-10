@@ -55,7 +55,7 @@ nav ul{
     bottom:0;
     width: 0;
     height: 2px;
-    background-color: #cf001c;
+    background-color: #e10600;
     transition: width 0.8s ease;
 }
 .navegacao:hover::after{
@@ -83,6 +83,7 @@ nav ul{
     display: flex;
     justify-content: center;
     padding: 100px;
+    margin-bottom: 100px;
 }
 p{
     text-align: justify;
@@ -104,10 +105,19 @@ html{
     justify-content: center;
     align-items: center;
     border-radius:15px;
-    transition: transform 1s ease;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1.2s ease;
 }
-.card:hover{
-    transform: translateY(-10%);
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+.show:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 .card div{
     padding:5px;
@@ -261,10 +271,23 @@ footer{
     align-items: center;
     padding-bottom: 10px;
 }   
-footer h3{
+footer h3, h4{
     text-align: center;
+    color:#9e9d9d;
+    margin:0px;
 }
 footer p{
     margin: 8px;
     text-align: center;
+}
+footer img{
+    width:100px;
+    height: 100px;
+    position: relative;
+    top:8px;
+}
+footer div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

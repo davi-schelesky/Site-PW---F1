@@ -34,3 +34,22 @@ function update(direcao){
 
     itens[active].classList.add("active");
 };
+
+const myObserver = new IntersectionObserver((elemento) => {
+    elemento.forEach((elemento) => {
+        if(elemento.isIntersecting){
+            elemento.target.classList.add("show");
+        }
+        else{
+            elemento.target.classList.remove("show");
+        }
+    })
+});
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+    myObserver.observe(card);
+});
+
+
+
