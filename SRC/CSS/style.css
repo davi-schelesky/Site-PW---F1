@@ -9,12 +9,12 @@ body{
     overflow-x: hidden;
 }
 main{
-    min-height: 100vh;
-    min-width: 100vh;
+    min-height: 100%;
+    min-width: 100%;
 }
 #logo{
-    margin:10px;
-    width: 180px;
+    margin-left:18px;
+    width: 150px;
     height: 100px;
 }
 header{
@@ -225,30 +225,28 @@ html{
     background-color: rgba(255, 0, 0, 0.2);
     border-color: #ff0000;
 }
-.seninha{
+.carroF1{
     display: flex;
     justify-content: center;
 }
 #foto{
     height: 250px;
     width: 250px;
-    border-radius: 50%;
-    border:2px solid #000;
-    margin:10px;
-    background-color: #fff;
+    margin: 10px;
     transform: translateX(0px);
-    transition:transform 1.3s ease;
+    transition:transform 1s ease;
 }
 #foto:hover{
-    transform: translateX(600px);
+    transform: translateX(550px);
 }
 #voltar{
     position: relative;
+    bottom:10px;
     text-decoration: none;
     color:#fff;
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 10px;
+    margin: 20px;
 }
 #voltar::after{
     content: "";

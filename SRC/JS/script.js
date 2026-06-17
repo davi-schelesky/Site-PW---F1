@@ -2,6 +2,7 @@ const botaoVoltar = document.getElementById("prev");
 const botaoPassar = document.getElementById("next");
 const itens = document.querySelectorAll(".carrossel");
 const galeria = document.getElementById("galeria");
+const barulhoCarro = document.getElementById("audioCarro");
 
 let active = 0;
 const total = itens.length;
@@ -51,5 +52,10 @@ cards.forEach((card) => {
     myObserver.observe(card);
 });
 
-
-
+function tocarAudio(){
+    barulhoCarro.currentTime = 0;
+    barulhoCarro.play();
+};
+function pararAudio(){
+    barulhoCarro.pause();
+};
