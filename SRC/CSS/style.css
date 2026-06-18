@@ -13,9 +13,8 @@ main{
     min-width: 100%;
 }
 #logo{
-    margin-left:18px;
     width: 150px;
-    height: 100px;
+    height: 120px;
 }
 header{
     height:15vh;
@@ -23,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right:50px;
+    padding:0 50px 0 22px;
     position:sticky;
     top:0;
     z-index: 9999;
@@ -67,7 +66,7 @@ nav ul{
         rgba(0, 0, 0, 0.9) 20%,
         rgba(0, 0, 0, 0.5) 50%,
         rgba(0, 0, 0, 0) 100%
-        ), url("../assets/foto-capa.avif");
+        ), url("../assets/img/foto-capa.avif");
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -280,9 +279,8 @@ footer p{
 }
 footer img{
     width:100px;
-    height: 100px;
-    position: relative;
-    top:8px;
+    height: 90px;
+    margin-left:10px;
 }
 footer div div{
     display: flex;
