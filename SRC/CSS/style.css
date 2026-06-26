@@ -183,7 +183,7 @@ html{
 #galeria{
     display: flex;
     width: 80%;
-    height: 250px;
+    height: 500px;
     margin:0 auto;
     margin-bottom: 50px;
     position:relative;
@@ -311,7 +311,7 @@ footer div div{
     justify-content: center;
     align-items: center;
 }
-@media (max-width:700px) {
+@media screen and (max-width:700px) {
     body {
         width: 100vw;
         font-size: .75rem;
@@ -366,5 +366,8 @@ footer div div{
     .card div {
         height: 60%;
         width: 100%;
+    }
+    #galeria {
+        height: 250px;
     }
 }
