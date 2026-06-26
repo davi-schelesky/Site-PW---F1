@@ -183,9 +183,9 @@ html{
 #galeria{
     display: flex;
     width: 80%;
-    height: 500px;
+    height: 250px;
     margin:0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position:relative;
 }
 .carrossel{
@@ -312,6 +312,15 @@ footer div div{
     align-items: center;
 }
 @media (max-width:700px) {
+    body {
+        width: 100vw;
+        font-size: .75rem;
+        overflow-x: hidden;
+    }
+    .textos {
+        padding: 50px;
+        margin-bottom: 50px;
+    }
     nav ul {
         visibility: hidden;
         flex-direction: column;
@@ -352,10 +361,10 @@ footer div div{
     }
     .fotoPilotos {
         height: 40%;
-        width: 70%;
+        width: 100px;
     }
     .card div {
         height: 60%;
-        width: 90%;
+        width: 100%;
     }
 }
