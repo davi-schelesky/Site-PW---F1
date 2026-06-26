@@ -3,6 +3,8 @@ const botaoPassar = document.getElementById("next");
 const itens = document.querySelectorAll(".carrossel");
 const galeria = document.getElementById("galeria");
 const barulhoCarro = document.getElementById("audioCarro");
+const btnMobile = document.getElementById("btn-mobile");
+const nav = document.querySelector("nav");
 
 let active = 0;
 const total = itens.length;
@@ -59,3 +61,7 @@ function tocarAudio(){
 function pararAudio(){
     barulhoCarro.pause();
 };
+
+btnMobile.addEventListener('click', () => {
+    nav.classList.toggle("active");
+});
