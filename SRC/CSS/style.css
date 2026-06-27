@@ -185,7 +185,7 @@ html{
     width: 80%;
     height: 500px;
     margin:0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position:relative;
 }
 .carrossel{
@@ -311,7 +311,16 @@ footer div div{
     justify-content: center;
     align-items: center;
 }
-@media (max-width:700px) {
+@media screen and (max-width:700px) {
+    body {
+        width: 100vw;
+        font-size: .75rem;
+        overflow-x: hidden;
+    }
+    .textos {
+        padding: 50px;
+        margin-bottom: 50px;
+    }
     nav ul {
         visibility: hidden;
         flex-direction: column;
@@ -348,5 +357,8 @@ footer div div{
     }
     .pilotos {
         flex-direction: column;
+    }
+    #galeria {
+        height: 250px;
     }
 }
